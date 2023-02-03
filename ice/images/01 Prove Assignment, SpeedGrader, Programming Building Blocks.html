@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html class="" dir="ltr" style="" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="sentry-trace" content="619a16eab79646e4ab8a3d2b4709f7ba-06dc071a0b28416f-0">
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Regular-bd03a2cc27.woff2" as="font" type="font/woff2" crossorigin="anonmyous">
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Bold-cccb897485.woff2" as="font" type="font/woff2" crossorigin="anonmyous">
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Italic-4eb103b4d1.woff2" as="font" type="font/woff2" crossorigin="anonmyous">
+  <link rel="stylesheet" media="screen" href="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/fonts-43e9c545fc.css">
+    <script type="text/javascript" async="" src="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/heap-3001039959.js"></script><script>if (navigator.userAgent.match(/(MSIE|Trident\/)/)) location.replace('/ie-is-not-supported.html')</script>
+  
+  <link rel="shortcut icon" type="image/x-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico">
+  <link rel="apple-touch-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/apple-touch-icon-585e5d997d.png">
+  <link rel="stylesheet" media="all" href="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.css">
+  <link rel="stylesheet" media="all" href="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/common-fcaf8ca23d.css">
+  <meta name="apple-itunes-app" content="app-id=480883488">
+<link rel="manifest" href="https://byui.instructure.com/web-app-manifest/manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#394B58">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="stylesheet" media="all" href="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/speed_grader-a869388ffe.css">
+<link rel="stylesheet" media="all" href="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/new_user_tutorials-2950c871dd.css">
+  <link rel="stylesheet" media="all" href="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/byui.css">
+<link rel="stylesheet" media="all" href="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/canvas_global.css">
+  <script>
+    function _earlyClick(e){
+      var c = e.target
+      while (c && c.ownerDocument) {
+        if (c.getAttribute('href') == '#' || c.getAttribute('data-method')) {
+          if (!e.defaultPrevented) {
+            e.preventDefault()
+          }
+          (_earlyClick.clicks = _earlyClick.clicks || []).push(c)
+          break
+        }
+        c = c.parentNode
+      }
+    }
+    document.addEventListener('click', _earlyClick)
+  </script>
+
+
+  <script>
+    INST = {"environment":"production","allowMediaComments":true,"kalturaSettings":{"domain":"nv.instructuremedia.com","resource_domain":"nv.instructuremedia.com","rtmp_domain":"iad.rtmp.instructuremedia.com","partner_id":"9","subpartner_id":"0","player_ui_conf":"0","kcw_ui_conf":"0","upload_ui_conf":"0","max_file_size_bytes":534773760,"do_analytics":false,"hide_rte_button":false,"js_uploader":true},"logPageViews":true,"editorButtons":[{"name":"Google Apps","id":1,"favorite":false,"url":"https://google-drive-lti-iad-prod.instructure.com/lti/rce-content-selection","icon_url":"https://google-drive-lti-iad-prod.instructure.com/icon.png","canvas_icon_class":null,"width":700,"height":600,"use_tray":false,"description":"\u003cp\u003eAllows you to pull in documents from Google Drive to Canvas\u003c/p\u003e\n"},{"name":"Microsoft Office 365","id":2,"favorite":false,"url":"https://office365-iad-prod.instructure.com/lti/rce-content-item","icon_url":"https://office365-iad-prod.instructure.com/images/office365_icon.png","canvas_icon_class":null,"width":900,"height":600,"use_tray":false,"description":"\u003cp\u003eAllows you to pull in documents from Office 365 to Canvas\u003c/p\u003e\n"},{"name":"YouTube","id":3,"favorite":false,"url":"https://www.edu-apps.org/lti_public_resources/?tool_id=youtube","icon_url":"https://www.edu-apps.org/assets/lti_public_resources/youtube_icon.png","canvas_icon_class":null,"width":560,"height":600,"use_tray":false,"description":"\u003cp\u003eSearch publicly available YouTube videos. A new icon will show up in your course rich editor letting you search YouTube and click to embed videos in your course material.\u003c/p\u003e\n"},{"name":"Commons Favorites","id":6,"favorite":false,"url":"https://lor.instructure.com/api/lti/favorite-resources","icon_url":"https://lor.instructure.com/img/icon_commons.png","canvas_icon_class":null,"width":800,"height":400,"use_tray":true,"description":"\u003cp\u003eFind and share course content\u003c/p\u003e\n"},{"name":"Non-Gradeable External URL","id":167,"favorite":false,"url":"https://byui-lti-to-url.azurewebsites.net","icon_url":"https://byui-lti-to-url.azurewebsites.net/content/URL2icon.png","canvas_icon_class":null,"width":900,"height":750,"use_tray":false,"description":"\u003cp\u003ePass variables to external URLs\u003c/p\u003e\n"},{"name":"EQUELLA","id":179,"favorite":false,"url":"https://content.byui.edu/canvassignon.do?action=selectOrAdd\u0026cancelDisabled=true","icon_url":"https://content.byui.edu/images/equella.gif","canvas_icon_class":"icon-lti","width":1024,"height":768,"use_tray":false,"description":"\u003cp\u003eEQUELLA digital repository\u003c/p\u003e\n"},{"name":"Films On Demand","id":219,"favorite":false,"url":"https://lti.films.com/LtiSearch.aspx","icon_url":"http://fod.infobase.com/images/LTI_logo.png","canvas_icon_class":null,"width":920,"height":636,"use_tray":false,"description":"\u003cp\u003eSearch available Films On Demand videos. A new icon will show up in your course rich editor letting you search Films On Demand and click to embed videos in your course material.\u003c/p\u003e\n"},{"name":"Quizlet","id":225,"favorite":false,"url":"https://www.edu-apps.org/lti_public_resources/?tool_id=quizlet","icon_url":"https://www.edu-apps.org/assets/lti_public_resources/quizlet_icon.png","canvas_icon_class":null,"width":560,"height":600,"use_tray":false,"description":"\u003cp\u003eSearch for and embed publicly available flashcards and question sets from Quizlet. Questions can be embedded directly into content as flash cards, review, or as a study game.\u003c/p\u003e\n"},{"name":"Panopto","id":2639,"favorite":false,"url":"https://byui.hosted.panopto.com/Panopto/LTI/LTI.aspx","icon_url":"https://byui.hosted.panopto.com/Panopto/images/panopto_logo_globe.png","canvas_icon_class":null,"width":900,"height":700,"use_tray":false,"description":""},{"name":"Harvard Business Publishing Catalog - Rich Text","id":7107,"favorite":false,"url":"https://services.hbsp.harvard.edu/lti/links","icon_url":"https://s3.amazonaws.com/he-hb4e-prod/lti/product-catalog.png","canvas_icon_class":null,"width":800,"height":600,"use_tray":false,"description":"\u003cp\u003eCases, Articles, Simulations, and Online Courses.\u003c/p\u003e\n"},{"name":"Alexander Street Video","id":8581,"favorite":false,"url":"https://video.alexanderstreet.com/lti/search-widget","icon_url":"https://video.alexanderstreet.com/assets/lti/favicon-16x16.png","canvas_icon_class":null,"width":800,"height":600,"use_tray":false,"description":"\u003cp\u003eSearch and embed Alexander Street video\u003c/p\u003e\n"},{"name":"Embed from My Media (Kaltura)","id":12987,"favorite":true,"url":"https://byui-canvas-prod.kaf.kaltura.com","icon_url":"https://cdnsecakmi.kaltura.com/content/static/kalturalogo.png","canvas_icon_class":null,"width":800,"height":400,"use_tray":false,"description":"\u003cp\u003eBYU-I Media\u003c/p\u003e\n"},{"name":"Microsoft Teams Meetings","id":13235,"favorite":false,"url":"https://msteams-lti-iad-prod.inscloudgate.net/resource_link_request","icon_url":"https://msteams-lti-iad-prod.inscloudgate.net/images/placement_icon.png","canvas_icon_class":null,"width":575,"height":700,"use_tray":false,"description":"\u003cp\u003eMicrosoft Teams Meetings integration for Canvas LMS\u003c/p\u003e\n"},{"name":"HBP Catalog 1p3","id":17781,"favorite":false,"url":"https://services.hbsp.harvard.edu/lti/links/tools/lms-activates","icon_url":"https://s3.amazonaws.com/he-hb4e-prod/lti/product-catalog.png","canvas_icon_class":null,"width":800,"height":400,"use_tray":false,"description":"\u003cp\u003eHarvard Business Publishing\u003c/p\u003e\n"},{"name":"Upload / Embed Image","id":18057,"favorite":false,"url":"https://uei.ciditools.com/","icon_url":"https://uei.ciditools.com/editorIcon.png","canvas_icon_class":{"url":"https://uei.ciditools.com/","icon_url":"https://uei.ciditools.com/editorIcon.png","text":"Upload / Embed Image","selection_width":750,"selection_height":600,"enabled":true,"message_type":"ContentItemSelectionRequest"},"width":750,"height":600,"use_tray":false,"description":"\u003cp\u003eImage upload and embed tool\u003c/p\u003e\n"},{"name":"Google Drive (LTI 1.3)","id":18139,"favorite":true,"url":"https://assignments.google.com/lti/e","icon_url":"https://www.gstatic.com/images/branding/product/1x/drive_16dp.png","canvas_icon_class":null,"width":690,"height":530,"use_tray":false,"description":"\u003cp\u003eCollect, analyze, and grade student work with Google Assignments\u003c/p\u003e\n"},{"name":"FeedbackFruits","id":18637,"favorite":false,"url":"https://us-api.feedbackfruits.com/v1/lti/launch","icon_url":"https://us-api.feedbackfruits.com/assets/feedbackfruits-a14091228d18bee7a545e03e8875379669790caba70cddffb4b3df012ca31a9c.png","canvas_icon_class":null,"width":1024,"height":768,"use_tray":false,"description":"\u003cp\u003eTools to support teachers teaching\u003c/p\u003e\n"},{"name":"Insert Harmonize Item","id":18917,"favorite":false,"url":"https://byui-000.customer.42lines.net/api/lti/v13/dde151f6c5114694923a9a4a73564f58/target","icon_url":"https://byui-000.customer.42lines.net/favicon-16x16.png","canvas_icon_class":null,"width":800,"height":800,"use_tray":false,"description":"\u003cp\u003eDiscussions \u0026amp; Classroom Tools\u003c/p\u003e\n"}]};
+    ENV = {"ASSET_HOST":"https://du11hjcvx0uqb.cloudfront.net","active_brand_config_json_url":"https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/default/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.json","active_brand_config":null,"confetti_branding_enabled":false,"url_to_what_gets_loaded_inside_the_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/default/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_high_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-fa0672d544.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/fonts-43e9c545fc.css"],"url_for_high_contrast_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/default/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_high_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-fa0672d544.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/fonts-43e9c545fc.css"],"current_user_id":"5499","current_user_global_id":"107060000000005499","current_user_roles":["user","student","teacher"],"current_user_is_student":false,"current_user_types":[],"current_user_disabled_inbox":false,"current_user_visited_tabs":null,"discussions_reporting":false,"files_domain":"cluster227.canvas-user-content.com","DOMAIN_ROOT_ACCOUNT_ID":"107060000000000001","k12":false,"help_link_name":"Help","help_link_icon":"help","use_high_contrast":true,"auto_show_cc":false,"disable_celebrations":false,"disable_keyboard_shortcuts":false,"LTI_LAUNCH_FRAME_ALLOWANCES":["geolocation *","microphone *","camera *","midi *","encrypted-media *","autoplay *","clipboard-write *","display-capture *"],"DEEP_LINKING_POST_MESSAGE_ORIGIN":"https://byui.instructure.com","DEEP_LINKING_LOGGING":null,"comment_library_suggestions_enabled":false,"SETTINGS":{"open_registration":false,"collapse_global_nav":true,"release_notes_badge_disabled":false},"FULL_STORY_ENABLED":false,"RAILS_ENVIRONMENT":"Production","SENTRY_FRONTEND":{"dsn":"https://355a1d96717e4038ac25aa852fa79a8f@relay-iad.sentry.insops.net/388","org_slug":"instructure","base_url":"https://sentry.insops.net","normalized_route":"/courses/{course_id}/gradebook/speed_grader","errors_sample_rate":"0.0005","traces_sample_rate":"0.0005","url_deny_pattern":"instructure-uploads.*amazonaws.com","revision":"canvas-lms@20230201.141"},"DATA_COLLECTION_ENDPOINT":"https://canvas-frontend-data-iad-prod.inscloudgate.net/submit","DIRECT_SHARE_ENABLED":true,"CAN_VIEW_CONTENT_SHARES":true,"FEATURES":{"featured_help_links":true,"lti_platform_storage":false,"scale_equation_images":true,"buttons_and_icons_cropper":true,"calendar_series":false,"account_level_blackout_dates":false,"account_calendar_events":true,"rce_ux_improvements":false,"render_both_to_do_lists":false,"course_paces_redesign":false,"course_paces_for_students":false,"rce_better_paste":false,"product_tours":false,"files_dnd":true,"usage_rights_discussion_topics":true,"granular_permissions_manage_users":true,"create_course_subaccount_picker":true,"lti_deep_linking_module_index_menu_modal":true,"lti_multiple_assignment_deep_linking":true,"buttons_and_icons_root_account":false,"extended_submission_state":false,"scheduled_page_publication":true,"send_usage_metrics":true,"embedded_release_notes":false,"canvas_k6_theme":false,"new_math_equation_handling":true},"current_user":{"id":"5499","anonymous_id":"48r","display_name":"David Gjennestad","avatar_image_url":"https://byui.instructure.com/images/thumbnails/10948020/CrDQgTNQpFllSA8xG1tpZJDAdhsVc6qvOFmXzeEa","html_url":"https://byui.instructure.com/about/5499","pronouns":null,"avatar_is_fallback":false},"page_view_update_url":"/page_views/3c4af5c7-540c-412e-afc3-79bc2cbd414f?page_view_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpIjoiM2M0YWY1YzctNTQwYy00MTJlLWFmYzMtNzliYzJjYmQ0MTRmIiwidSI6MTA3MDYwMDAwMDAwMDA1NDk5LCJjIjoiMjAyMy0wMi0wM1QxNzoyODo0Ni45NFoifQ.QBVFtxppgi_4oSX7w6c9DTUgwKuQtWUeJK8vZe4UZGM","context_asset_string":"course_211012","ping_url":"https://byui.instructure.com/api/v1/courses/211012/ping","TIMEZONE":"America/Denver","CONTEXT_TIMEZONE":"America/Denver","LOCALES":["en"],"BIGEASY_LOCALE":"en_US","FULLCALENDAR_LOCALE":"en","MOMENT_LOCALE":"en","rce_auto_save_max_age_ms":86400000,"K5_USER":false,"K5_HOMEROOM_COURSE":false,"K5_SUBJECT_COURSE":false,"LOCALE_TRANSLATION_FILE":"/dist/javascripts/translations/en-888412cb6b.json","SINGLE_NQ_SESSION_ENABLED":true,"NQ_GRADE_BY_QUESTION_ENABLED":false,"GRADE_BY_QUESTION":false,"EMOJIS_ENABLED":false,"EMOJI_DENY_LIST":null,"MANAGE_GRADES":true,"READ_AS_ADMIN":true,"CONTEXT_ACTION_SOURCE":"speed_grader","can_view_audit_trail":false,"settings_url":"/courses/211012/gradebook/speed_grader_settings","force_anonymous_grading":false,"anonymous_identities":{},"instructor_selectable_states":{},"final_grader_id":null,"grading_role":"grader","grading_type":"points","lti_retrieve_url":"https://byui.instructure.com/courses/211012/external_tools/retrieve?assignment_id=10483503\u0026display=borderless","course_id":"211012","assignment_id":"10483503","assignment_title":"01 Prove: Assignment","rubric":{"id":"1960302","context_id":"211012","context_type":"Course","data":[{"id":"_2211","description":"Grade","long_description":null,"points":50.0,"mastery_points":null,"ignore_for_scoring":null,"title":"Grade","criterion_use_range":null,"ratings":[{"description":"Shows creativity and exceeds requirements","long_description":"Shows creativity and exceeds minimum assignment requirements","id":"blank","criterion_id":"_2211","points":50.0},{"description":"Meets requirements","long_description":"Meets all the minimum requirements specified in the assignment instructions","id":"_3076","criterion_id":"_2211","points":46.5},{"description":"Slightly deficient","long_description":"Missing a minor requirement","id":"_578","criterion_id":"_2211","points":42.5},{"description":"Developing (but significantly deficient)","long_description":"Missing multiple requirements","id":"_988","criterion_id":"_2211","points":37.5},{"description":"Some attempt made","long_description":"Some attempt was made, but missing most requirements","id":"_6131","criterion_id":"_2211","points":25.0},{"description":"Nothing submitted","long_description":"No attempt was made to complete the assignment","id":"blank_2","criterion_id":"_2211","points":0.0}]}],"points_possible":50.0,"title":"CSE 110 Assignment Rubric - 50 pts","reusable":false,"public":false,"read_only":false,"free_form_criterion_comments":false,"hide_score_total":false,"criteria":[{"id":"_2211","description":"Grade","long_description":null,"points":50.0,"mastery_points":null,"ignore_for_scoring":null,"title":"Grade","criterion_use_range":null,"ratings":[{"description":"Shows creativity and exceeds requirements","long_description":"Shows creativity and exceeds minimum assignment requirements","id":"blank","criterion_id":"_2211","points":50.0},{"description":"Meets requirements","long_description":"Meets all the minimum requirements specified in the assignment instructions","id":"_3076","criterion_id":"_2211","points":46.5},{"description":"Slightly deficient","long_description":"Missing a minor requirement","id":"_578","criterion_id":"_2211","points":42.5},{"description":"Developing (but significantly deficient)","long_description":"Missing multiple requirements","id":"_988","criterion_id":"_2211","points":37.5},{"description":"Some attempt made","long_description":"Some attempt was made, but missing most requirements","id":"_6131","criterion_id":"_2211","points":25.0},{"description":"Nothing submitted","long_description":"No attempt was made to complete the assignment","id":"blank_2","criterion_id":"_2211","points":0.0}]}]},"nonScoringRubrics":true,"outcome_extra_credit_enabled":false,"outcome_proficiency":null,"group_comments_per_attempt":false,"can_comment_on_submission":true,"show_help_menu_item":true,"help_url":"https://community.canvaslms.com/t5/Instructor-Guide/tkb-p/Instructor#SpeedGrader","update_submission_grade_url":"/courses/211012/gradebook/update_submission","can_delete_attachments":false,"media_comment_asset_string":"user_5499","late_policy":{"id":"89798","course_id":"211012","missing_submission_deduction_enabled":true,"missing_submission_deduction":100.0,"late_submission_deduction_enabled":true,"late_submission_deduction":10.0,"late_submission_interval":"day","late_submission_minimum_percent_enabled":true,"late_submission_minimum_percent":50.0,"created_at":"2023-01-03T15:23:27-07:00","updated_at":"2023-01-03T15:23:27-07:00","root_account_id":"1"},"speedgrader_grade_sync_max_attempts":20,"assignment_missing_shortcut":true,"selected_section_id":null,"filter_speed_grader_by_student_group_feature_enabled":true,"assignment_comment_library_feature_enabled":true,"update_rubric_assessment_url":"/courses/211012/rubric_associations/4035045/assessments","RUBRIC_ASSESSMENT":{"assessor_id":"5499","assessment_type":"grading"},"badge_counts":{"submissions":0},"notices":[],"active_context_tab":"grades"};
+    BRANDABLE_CSS_HANDLEBARS_INDEX = [["new_styles_normal_contrast","new_styles_high_contrast","new_styles_normal_contrast_rtl","new_styles_high_contrast_rtl"],{"10":["8300658022",0,"250b5824c2",2],"15":["fc26aa5fd4",0,"f904416063",2],"19":["df5777ed9c"],"61":["f3934dab06","f405852bb2","ee5810890b","3fd9943b9a"],"67":["8b57f54e71",0,"43833dde85",2],"71":["35b89b103a","4304be7d41","58dbfc2651","2932678b1c"],"06":["cb9f63cba6",0,"2be010fc14",2],"f0":["7c947dce20",0,0,0],"c8":["12d5e4d1e8","9f7b02d283","4ebd280f3e","b547456f4c"],"1e":["02e336724a","d7bb142b0a","d7ac7fdfb8","c03b9b261e"],"b3":["8ebc71ebc3","cf8efa05c8","4efdc93a21","fd6d3a9780"],"4f":["0a2c3dcf2f",0,"79668e6396",2],"0c":["c26e82abac",0,"b71e9cbd6d",2],"da":["efb9fe6d7c","edbd1b5e83","a6dc56afb7","dfb2d13098"],"1d":["a3bfcb7961",0,"90682b3bbe",2],"08":["64bff5a97d"],"e2":["11429f119a"],"9f":["35936a18c3",0,0,0],"2b":["abf63f48ef","bf8e135ffe","378e0c136b","9833e305e6"],"2c":["6d919206cd",0,0,0],"c2":["6f2721ae01"],"9c":["ecafc938e4",0,"59e7c22304",2],"c5":["ebf0e1382f","7f587d9a8a","afbdabf23d","0d398196a8"],"f2":["51574f9b13"]}]
+;
+  </script>
+
+  <link rel="preload" href="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.js" as="script" type="text/javascript"><link rel="preload" href="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/Denver-40670c6af7.js" as="script" type="text/javascript"><link rel="preload" href="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/Denver-40670c6af7.js" as="script" type="text/javascript"><link rel="preload" href="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/en_US-80a0ce259b.js" as="script" type="text/javascript"><link rel="preload" href="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/main-e-2017565ed2.js" as="script" type="text/javascript" crossorigin="anonymous"><script>
+//<![CDATA[
+
+      ;["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/default/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.js", "https://du11hjcvx0uqb.cloudfront.net/dist/timezone/America/Denver-40670c6af7.js", "https://du11hjcvx0uqb.cloudfront.net/dist/timezone/America/Denver-40670c6af7.js", "https://du11hjcvx0uqb.cloudfront.net/dist/timezone/en_US-80a0ce259b.js"].forEach(function(src) {
+        var s = document.createElement('script'); s.src = src; s.async = false;
+        document.head.appendChild(s)
+      });
+//]]>
+</script><script src="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.js"></script><script src="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/Denver-40670c6af7.js"></script><script src="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/Denver-40670c6af7.js"></script><script src="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/en_US-80a0ce259b.js"></script><script>
+//<![CDATA[
+
+      ;["https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/main-e-2017565ed2.js"].forEach(function(src) {
+        var s = document.createElement('script'); s.src = src; s.async = false; s.crossOrigin = 'anonymous';
+        document.head.appendChild(s)
+      });
+//]]>
+</script><script src="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/main-e-2017565ed2.js" crossorigin="anonymous"></script><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/speed_grader-c-48dcbd852e.js" as="script" type="text/javascript"><script>
+//<![CDATA[
+(window.bundles || (window.bundles = [])).push('speed_grader');
+//]]>
+</script>
+  <title>01 Prove: Assignment, SpeedGrader, Programming Building Blocks</title>
+
+
+
+    <script type="text/javascript">
+      window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
+      heap.load("3001039959");
+    </script>
+
+<script src="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/byui.js"></script><script src="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/campus.js"></script><style type="text/css"></style><style type="text/css">.mejs-offscreen{clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);clip-path:polygon(0px 0,0 0,0 0,0 0);position:absolute!important;height:1px;width:1px;overflow:hidden}.mejs-container{position:relative;background:#000;font-family:Helvetica,Arial,serif;text-align:left;vertical-align:top;text-indent:0}.mejs-fill-container,.mejs-fill-container .mejs-container{width:100%;height:100%}.mejs-fill-container{overflow:hidden}.mejs-container:focus{outline:0}.me-plugin{position:absolute}.mejs-embed,.mejs-embed body{width:100%;height:100%;margin:0;padding:0;background:#000;overflow:hidden}.mejs-fullscreen{overflow:hidden!important}.mejs-container-fullscreen{position:fixed;left:0;top:0;right:0;bottom:0;overflow:hidden;z-index:1000}.mejs-container-fullscreen .mejs-mediaelement,.mejs-container-fullscreen video{width:100%;height:100%}.mejs-clear{clear:both}.mejs-background{position:absolute;top:0;left:0}.mejs-mediaelement{position:absolute;top:0;left:0;width:100%;height:100%}.mejs-poster{position:absolute;top:0;left:0;background-size:contain;background-position:50% 50%;background-repeat:no-repeat}:root .mejs-poster img{display:none}.mejs-poster img{border:0;padding:0}.mejs-overlay{position:absolute;top:0;left:0}.mejs-overlay-play{cursor:pointer}.mejs-overlay-button{position:absolute;top:50%;left:50%;width:100px;height:100px;margin:-50px 0 0 -50px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/746c3af7a145a09239a36e5ef61cfea0.svg) no-repeat}.no-svg .mejs-overlay-button{background-image:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/716436fb3df0d29e6b37dd62d952676a.png)}.mejs-overlay:hover .mejs-overlay-button{background-position:0 -100px}.mejs-overlay-loading{position:absolute;top:50%;left:50%;width:80px;height:80px;margin:-40px 0 0 -40px;background:#333;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(0,0,0,.9);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.9)),to(rgba(0,0,0,.9)));background:-webkit-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-moz-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-o-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-ms-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:linear-gradient(rgba(50,50,50,.9),rgba(0,0,0,.9))}.mejs-overlay-loading span{display:block;width:80px;height:80px;background:transparent url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/76b326f4d44222126fee21076595bef5.gif) 50% 50% no-repeat}.mejs-container .mejs-controls{position:absolute;list-style-type:none;margin:0;padding:0;bottom:0;left:0;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(0,0,0,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.7)),to(rgba(0,0,0,.7)));background:-webkit-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-moz-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-o-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-ms-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:linear-gradient(rgba(50,50,50,.7),rgba(0,0,0,.7));height:30px;width:100%}.mejs-container .mejs-controls div{list-style-type:none;background-image:none;display:block;float:left;margin:0;padding:0;width:26px;height:26px;font-size:11px;line-height:11px;font-family:Helvetica,Arial,serif;border:0}.mejs-controls .mejs-button button{cursor:pointer;display:block;font-size:0;line-height:0;text-decoration:none;margin:7px 5px;padding:0;position:absolute;height:16px;width:16px;border:0;background:transparent url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/40f56f5a736da4effeb790cedb8a52f0.svg) no-repeat}.no-svg .mejs-controls .mejs-button button{background-image:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/24a0227fbdd3acfd86ff03fc3fc6c8a4.png)}.mejs-controls .mejs-button button:focus{outline:dotted 1px #999}.mejs-container .mejs-controls .mejs-time{color:#fff;display:block;height:17px;width:auto;padding:10px 3px 0;overflow:hidden;text-align:center;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}.mejs-container .mejs-controls .mejs-time a{color:#fff;font-size:11px;line-height:12px;display:block;float:left;margin:1px 2px 0 0;width:auto}.mejs-controls .mejs-play button{background-position:0 0}.mejs-controls .mejs-pause button{background-position:0 -16px}.mejs-controls .mejs-stop button{background-position:-112px 0}.mejs-controls div.mejs-time-rail{direction:ltr;width:200px;padding-top:5px}.mejs-controls .mejs-time-rail span,.mejs-controls .mejs-time-rail a{display:block;position:absolute;width:180px;height:10px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;cursor:pointer}.mejs-controls .mejs-time-rail .mejs-time-total{margin:5px;background:#333;background:rgba(50,50,50,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(30,30,30,.8)),to(rgba(60,60,60,.8)));background:-webkit-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-moz-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-o-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-ms-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:linear-gradient(rgba(30,30,30,.8),rgba(60,60,60,.8))}.mejs-controls .mejs-time-rail .mejs-time-buffering{width:100%;background-image:-o-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-webkit-gradient(linear,0 100%,100% 0,color-stop(0.25,rgba(255,255,255,.15)),color-stop(0.25,transparent),color-stop(0.5,transparent),color-stop(0.5,rgba(255,255,255,.15)),color-stop(0.75,rgba(255,255,255,.15)),color-stop(0.75,transparent),to(transparent));background-image:-webkit-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-moz-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-ms-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);-webkit-background-size:15px 15px;-moz-background-size:15px 15px;-o-background-size:15px 15px;background-size:15px 15px;-webkit-animation:buffering-stripes 2s linear infinite;-moz-animation:buffering-stripes 2s linear infinite;-ms-animation:buffering-stripes 2s linear infinite;-o-animation:buffering-stripes 2s linear infinite;animation:buffering-stripes 2s linear infinite}@-webkit-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-moz-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-ms-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-o-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}.mejs-controls .mejs-time-rail .mejs-time-loaded{background:#3caac8;background:rgba(60,170,200,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(44,124,145,.8)),to(rgba(78,183,212,.8)));background:-webkit-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-moz-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-o-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-ms-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:linear-gradient(rgba(44,124,145,.8),rgba(78,183,212,.8));width:0}.mejs-controls .mejs-time-rail .mejs-time-current{background:#fff;background:rgba(255,255,255,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,.9)),to(rgba(200,200,200,.8)));background:-webkit-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-moz-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-o-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-ms-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:linear-gradient(rgba(255,255,255,.9),rgba(200,200,200,.8));width:0}.mejs-controls .mejs-time-rail .mejs-time-handle{display:none;position:absolute;margin:0;width:10px;background:#fff;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;cursor:pointer;border:solid 2px #333;top:-2px;text-align:center}.mejs-controls .mejs-time-rail .mejs-time-float{position:absolute;display:none;background:#eee;width:36px;height:17px;border:solid 1px #333;top:-26px;margin-left:-18px;text-align:center;color:#111}.mejs-controls .mejs-time-rail .mejs-time-float-current{margin:2px;width:30px;display:block;text-align:center;left:0}.mejs-controls .mejs-time-rail .mejs-time-float-corner{position:absolute;display:block;width:0;height:0;line-height:0;border:solid 5px #eee;border-color:#eee transparent transparent;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;top:15px;left:13px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float{width:48px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float-current{width:44px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float-corner{left:18px}.mejs-controls .mejs-fullscreen-button button{background-position:-32px 0}.mejs-controls .mejs-unfullscreen button{background-position:-32px -16px}.mejs-controls .mejs-volume-button{}.mejs-controls .mejs-mute button{background-position:-16px -16px}.mejs-controls .mejs-unmute button{background-position:-16px 0}.mejs-controls .mejs-volume-button{position:relative}.mejs-controls .mejs-volume-button .mejs-volume-slider{height:115px;width:25px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;top:-115px;left:0;z-index:1;position:absolute;margin:0}.mejs-controls .mejs-volume-button:hover{-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px;border-radius:0 0 4px 4px}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-total{position:absolute;left:11px;top:8px;width:2px;height:100px;background:#ddd;background:rgba(255,255,255,.5);margin:0}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current{position:absolute;left:11px;top:8px;width:2px;height:100px;background:#ddd;background:rgba(255,255,255,.9);margin:0}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle{position:absolute;left:4px;top:-3px;width:16px;height:6px;background:#ddd;background:rgba(255,255,255,.9);cursor:N-resize;-webkit-border-radius:1px;-moz-border-radius:1px;border-radius:1px;margin:0}.mejs-controls a.mejs-horizontal-volume-slider{height:26px;width:56px;position:relative;display:block;float:left;vertical-align:middle}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total{position:absolute;left:0;top:11px;width:50px;height:8px;margin:0;padding:0;font-size:1px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background:#333;background:rgba(50,50,50,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(30,30,30,.8)),to(rgba(60,60,60,.8)));background:-webkit-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-moz-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-o-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-ms-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:linear-gradient(rgba(30,30,30,.8),rgba(60,60,60,.8))}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current{position:absolute;left:0;top:11px;width:50px;height:8px;margin:0;padding:0;font-size:1px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background:#fff;background:rgba(255,255,255,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,.9)),to(rgba(200,200,200,.8)));background:-webkit-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-moz-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-o-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-ms-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:linear-gradient(rgba(255,255,255,.9),rgba(200,200,200,.8))}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle{display:none}.mejs-controls .mejs-captions-button{position:relative}.mejs-controls .mejs-captions-button button{background-position:-48px 0}.mejs-controls .mejs-captions-button .mejs-captions-selector{position:absolute;bottom:26px;right:-51px;width:85px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:10px 10px 0;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-captions-button .mejs-captions-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li{margin:0 0 6px;padding:0;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li label{width:55px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:10px}.mejs-controls .mejs-captions-button .mejs-captions-translations{font-size:10px;margin:0 0 5px}.mejs-chapters{position:absolute;top:0;left:0;border-right:solid 1px #fff;width:10000px;z-index:1}.mejs-chapters .mejs-chapter{position:absolute;float:left;background:#222;background:rgba(0,0,0,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.7)),to(rgba(0,0,0,.7)));background:-webkit-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-moz-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-o-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-ms-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:linear-gradient(rgba(50,50,50,.7),rgba(0,0,0,.7));filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#323232, endColorstr=#000000);overflow:hidden;border:0}.mejs-chapters .mejs-chapter .mejs-chapter-block{font-size:11px;color:#fff;padding:5px;display:block;border-right:solid 1px #333;border-bottom:solid 1px #333;cursor:pointer}.mejs-chapters .mejs-chapter .mejs-chapter-block-last{border-right:0}.mejs-chapters .mejs-chapter .mejs-chapter-block:hover{background:#666;background:rgba(102,102,102,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(102,102,102,.7)),to(rgba(50,50,50,.6)));background:-webkit-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-moz-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-o-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-ms-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:linear-gradient(rgba(102,102,102,.7),rgba(50,50,50,.6));filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#666666, endColorstr=#323232)}.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-title{font-size:12px;font-weight:700;display:block;white-space:nowrap;text-overflow:ellipsis;margin:0 0 3px;line-height:12px}.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-timespan{font-size:12px;line-height:12px;margin:3px 0 4px;display:block;white-space:nowrap;text-overflow:ellipsis}.mejs-captions-layer{position:absolute;bottom:0;left:0;text-align:center;line-height:20px;font-size:16px;color:#fff}.mejs-captions-layer a{color:#fff;text-decoration:underline}.mejs-captions-layer[lang=ar]{font-size:20px;font-weight:400}.mejs-captions-position{position:absolute;width:100%;bottom:15px;left:0}.mejs-captions-position-hover{bottom:35px}.mejs-captions-text,.mejs__captions-text *{padding:0;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(20,20,20,.5);white-space:pre-wrap;-webkit-box-shadow:5px 0 0 rgba(20,20,20,.5),-5px 0 0 rgba(20,20,20,.5);box-shadow:5px 0 0 rgba(20,20,20,.5),-5px 0 0 rgba(20,20,20,.5)}.me-cannotplay{}.me-cannotplay a{color:#fff;font-weight:700}.me-cannotplay span{padding:15px;display:block}.mejs-controls .mejs-loop-off button{background-position:-64px -16px}.mejs-controls .mejs-loop-on button{background-position:-64px 0}.mejs-controls .mejs-backlight-off button{background-position:-80px -16px}.mejs-controls .mejs-backlight-on button{background-position:-80px 0}.mejs-controls .mejs-picturecontrols-button{background-position:-96px 0}.mejs-contextmenu{position:absolute;width:150px;padding:10px;border-radius:4px;top:0;left:0;background:#fff;border:solid 1px #999;z-index:1001}.mejs-contextmenu .mejs-contextmenu-separator{height:1px;font-size:0;margin:5px 6px;background:#333}.mejs-contextmenu .mejs-contextmenu-item{font-family:Helvetica,Arial,serif;font-size:12px;padding:4px 6px;cursor:pointer;color:#333}.mejs-contextmenu .mejs-contextmenu-item:hover{background:#2C7C91;color:#fff}.mejs-controls .mejs-sourcechooser-button{position:relative}.mejs-controls .mejs-sourcechooser-button button{background-position:-128px 0}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector{position:absolute;bottom:26px;right:-10px;width:130px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:10px;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li{margin:0 0 6px;padding:0;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li label{width:100px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:10px}.mejs-postroll-layer{position:absolute;bottom:0;left:0;width:100%;height:100%;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);z-index:1000;overflow:hidden}.mejs-postroll-layer-content{width:100%;height:100%}.mejs-postroll-close{position:absolute;right:0;top:0;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);color:#fff;padding:4px;z-index:100;cursor:pointer}div.mejs-speed-button{width:46px!important;position:relative}.mejs-controls .mejs-button.mejs-speed-button button{background:transparent;width:36px;font-size:11px;line-height:normal;color:#fff}.mejs-controls .mejs-speed-button .mejs-speed-selector{position:absolute;top:-100px;left:-10px;width:60px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:0;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li label.mejs-speed-selected{color:rgba(33,248,248,1)}.mejs-controls .mejs-speed-button .mejs-speed-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li{margin:0 0 6px;padding:0 10px;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li label{width:60px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:11px;color:#fff;margin-left:5px;cursor:pointer}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li:hover{background-color:#c8c8c8!important;background-color:rgba(255,255,255,.4)!important}.mejs-controls .mejs-button.mejs-jump-forward-button{background:transparent url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/15e1ac8cbacc2efdf1ac2677de48a253.png) no-repeat 3px 3px}.mejs-controls .mejs-button.mejs-jump-forward-button button{background:transparent;font-size:9px;line-height:normal;color:#fff}.mejs-controls .mejs-button.mejs-skip-back-button{background:transparent url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/cd6dc830eb45b3a5a96bbc936ff54846.png) no-repeat 3px 3px}.mejs-controls .mejs-button.mejs-skip-back-button button{background:transparent;font-size:9px;line-height:normal;color:#fff}</style><style type="text/css">/*
+ * Copyright (C) 2014 - present Instructure, Inc.
+ *
+ * This file is part of Canvas.
+ *
+ * Canvas is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License as published by the Free
+ * Software Foundation, version 3 of the License.
+ *
+ * Canvas is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along
+ * with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/* customizations to mediaelementplayer css */
+
+/*
+  Because this file is not proccessed by our brandable_css sass pipeline,
+  it cannot use our sass-direction helpers. So we have to handle RTL manually
+  by putting direction-specific styles in [dir="ltr"] or [dir="rtl"] blocks.
+*/
+/* stylelint-disable property-disallowed-list, declaration-property-value-disallowed-list */
+
+/* good menu widths */
+.mejs-sourcechooser-selector {
+  width: 160px;
+}
+.mejs-sourcechooser-selector label {
+  width: 160px !important;
+}
+
+.mejs-captions-selector {
+  width: 105px;
+}
+[dir="ltr"]  .mejs-captions-selector { text-align: left }
+[dir="rtl"]  .mejs-captions-selector { text-align: right }
+
+.mejs-captions-selector label {
+  width: 70px !important;
+}
+
+/* Subtitile upload link */
+.mejs-captions-selector .upload-track {
+  color: white;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+[dir="ltr"] .mejs-captions-selector .upload-track {
+  margin-right: 0px;
+  margin-left: 5px;
+  float: left;
+}
+[dir="rtl"] .mejs-captions-selector .upload-track {
+  margin-left: 0px;
+  margin-right: 5px;
+  float: right;
+}
+
+/* "x" button to remove a subtitle */
+.mejs-captions-selector a[data-remove] {
+  position: absolute;
+  top: 0;
+  color: white;
+}
+[dir="ltr"] .mejs-captions-selector a[data-remove] { right: 0 }
+[dir="rtl"] .mejs-captions-selector a[data-remove] { left: 0 }
+
+
+/* style menu items without a radio button */
+.mejs-button [role="menu"] {
+  padding: 0 !important;
+}
+ /* compensate for above 0 padding */
+ .mejs-button [role="menu"] ul li {
+  position: relative;
+  padding: 0 10px !important;
+}
+/* add a hover effect */
+.mejs-button [role="menu"] ul li:hover {
+  background-color: #c8c8c8 !important;
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+.mejs-button [role="menu"] ul li input {
+  border: 0;
+  clip: rect(0 0 0 0);
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+}
+.mejs-button [role="menu"] ul li label {
+  cursor: pointer;
+}
+[dir="ltr"] .mejs-button [role="menu"] ul li label { margin-left: 5px }
+[dir="rtl"] .mejs-button [role="menu"] ul li label { margin-right: 5px }
+
+
+.mejs-button [role="menu"] label.mejs-selected {
+  color: #21f8f8 !important;
+}
+
+/* stylelint-enable property-disallowed-list, declaration-property-value-disallowed-list */
+</style><style type="text/css" data-glamor=""></style></head>
+
+<body class="ic-no-flex-layout full-width no-headers grades primary-nav-transitions full-width context-course_211012 responsive_student_grades_page webkit safari ff no-touch" style="cursor: auto;">
+
+<noscript>
+  <div role="alert" class="ic-flash-static ic-flash-error">
+    <div class="ic-flash__icon" aria-hidden="true">
+      <i class="icon-warning"></i>
+    </div>
+    <h1>You need to have JavaScript enabled in order to access this site.</h1>
+  </div>
+</noscript>
+
+
+
+
+<div id="flash_message_holder"></div>
+<div id="flash_screenreader_holder" role="alert" aria-live="assertive" aria-relevant="additions" class="screenreader-only" aria-atomic="true"></div>
+
+<div id="application" class="ic-app">
+  
+
+  <div id="instructure_ajax_error_box">
+    <div style="text-align: right; background-color: #fff;"><a href="#" class="close_instructure_ajax_error_box_link">Close</a></div>
+    <iframe id="instructure_ajax_error_result" src="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/a.html" style="border: 0;" title="Error"></iframe>
+  </div>
+
+  <div id="wrapper" class="ic-Layout-wrapper">
+      <div class="ic-app-nav-toggle-and-crumbs no-print">
+
+        <div class="ic-app-crumbs">
+            <nav id="breadcrumbs" role="navigation" aria-label="breadcrumbs" style=""><ul><li class="home"><a href="https://byui.instructure.com/"><span class="ellipsible"><i class="icon-home" title="My Dashboard">
+  <span class="screenreader-only">My Dashboard</span>
+</i>
+</span></a></li><li><a href="https://byui.instructure.com/courses/211012"><span class="ellipsible">CSE 110</span></a></li><li><a href="https://byui.instructure.com/courses/211012/grades"><span class="ellipsible">Grades</span></a></li></ul></nav>
+        </div>
+
+
+        <div class="right-of-crumbs">
+            <div class="TutorialToggleHolder"></div>
+        </div>
+
+      </div>
+    <div id="main" class="ic-Layout-columns">
+      <div id="not_right_side" class="ic-app-main-content">
+        <div id="content-wrapper" class="ic-Layout-contentWrapper">
+          
+          <div id="content" class="ic-Layout-contentMain" role="main">
+            
+
+<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;display: flex;flex-direction: column;">
+  <figure id="speed_grader_timeout_alert"></figure>
+  <figure id="speed_grader_loading" style="display: none;"></figure>
+  <h1 class="screenreader-only">SpeedGrader</h1>
+  <nav id="gradebook_header_container">
+    <form class="speed_grader_nav_form" action="/courses/211012/gradebook/update_submission" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="9DpuqsEJXo/aJg2bc54bikwMc8X+6q5Pxr/66snMYdnbaAPHpEckt4ATTrRHr1bJfnsyjJvayDuK9ZHTg5skvg==">
+    <div id="gradebook_header" class="subheadContent" style="">
+      <div class="subheadContent subheadContent--flex-start">
+        <div id="speedgrader-icons" class="gradebookActions">
+          <a href="https://byui.instructure.com/courses/211012/gradebook" id="speed_grader_gradebook_link" class="Button Button--icon-action gradebookActions__Button gradebook-icon-link" title="Gradebook">
+            <i class="icon-gradebook" aria-hidden="true"></i>
+            <span class="screenreader-only" aria-hidden="true">Gradebook</span>
+          </a>
+
+          <span id="speed_grader_post_grades_menu_mount_point"><span data-position="uL7kYUKe6aOp"><button data-testid="post-or-hide-grades-button" aria-haspopup="true" id="uLmVCKC3bPbu" aria-expanded="false" data-popover-trigger="true" data-position-target="uL7kYUKe6aOp" cursor="pointer" type="button" tabindex="0" class="fOyUs_bGBk fOyUs_fKyb fOyUs_cuDs fOyUs_cBHs fOyUs_eWbJ fOyUs_fmDy fOyUs_eeJl fOyUs_cBtr fOyUs_fuTR fOyUs_cnfU fQfxa_bGBk" style="margin: 0px; padding: 0px; border-radius: 0.25rem; border-width: 0px; width: auto; cursor: pointer;"><span class="fQfxa_caGd fQfxa_fKcQ fQfxa_buuG fQfxa_EMjX fQfxa_bCUx fQfxa_bVmg fQfxa_bIHL"><span direction="row" wrap="no-wrap" class="fOyUs_bGBk fOyUs_desw bDzpk_bGBk bDzpk_eRIA bDzpk_fZWR bDzpk_qOas" style="width: 100%; height: 100%;"><span class="fOyUs_bGBk dJCgj_bGBk"><span class="fQfxa_eoCh"><svg name="IconEye" viewBox="0 0 1920 1920" rotate="0" style="width: 1em; height: 1em;" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk speedgrader-postgradesmenu-icon"><g role="presentation"><path d="M960,1489.82027 C611.525723,1489.82027 291.455067,1287.49746 118.7017,959.901965 C291.455067,632.306469 611.525723,429.983661 960,429.983661 C1308.47428,429.983661 1628.54493,632.306469 1801.2983,959.901965 C1628.54493,1287.49746 1308.47428,1489.82027 960,1489.82027 L960,1489.82027 Z M1908.3418,936.267609 C1720.64473,558.647825 1357.33274,324 960,324 C562.667255,324 199.355266,558.647825 11.6582027,936.267609 L0,959.901965 L11.6582027,983.536321 C199.355266,1361.15611 562.667255,1595.80393 960,1595.80393 C1357.33274,1595.80393 1720.64473,1361.15611 1908.3418,983.536321 L1920,959.901965 L1908.3418,936.267609 Z M960,1171.86929 C843.100022,1171.86929 748.032678,1076.80194 748.032678,959.901965 C748.032678,843.001987 843.100022,747.934643 960,747.934643 C1076.89998,747.934643 1171.96732,843.001987 1171.96732,959.901965 C1171.96732,1076.80194 1076.89998,1171.86929 960,1171.86929 M960,641.950983 C784.703025,641.950983 642.049017,784.60499 642.049017,959.901965 C642.049017,1135.19894 784.703025,1277.85295 960,1277.85295 C1135.29698,1277.85295 1277.95098,1135.19894 1277.95098,959.901965 C1277.95098,784.60499 1135.29698,641.950983 960,641.950983" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg></span><span class="ergWt_bGBk">Post or Hide Grades</span></span></span></span></button></span></span>
+          <span id="speed_grader_settings_mount_point"><span data-position="uGCTxbxYaOZj"><button type="button" class="Button Button--icon-action gradebookActions__Button" title="Settings" aria-haspopup="true" id="u3gZ3ZzjmKnk" aria-expanded="false" data-popover-trigger="true" data-position-target="uGCTxbxYaOZj"><i class="icon-settings" aria-hidden="true"></i><span class="screenreader-only" aria-hidden="true">SpeedGrader Settings</span></button></span></span>
+        </div>
+        <div class="assignmentDetails">
+          <a id="assignment_url" href="https://byui.instructure.com/courses/211012/assignments/10483503">
+            <h2 class="assignmentDetails__Title">01 Prove: Assignment</h2>
+          </a>
+          <p class="assignmentDetails__Info">
+            <span>Due: Jan 11 at 11:59pm</span>
+            - <a id="context_title" href="https://byui.instructure.com/courses/211012">CSE 110</a>
+          </p>
+        </div>
+      </div>
+      <div class="subheadContent subheadContent--flex-end">
+        <div class="statsMetric">
+          <div class="statsMetric__Item">
+            <div class="statsMetric__Item-value" id="x_of_x_graded">8/45</div>
+            <div class="statsMetric__Item-label">Graded</div>
+          </div>
+          <div id="average-score-wrapper" class="statsMetric__Item" tabindex="0">
+            <div class="statsMetric__Item-value" id="average_score">35.5 / 50 (71%)</div>
+            <div class="statsMetric__Item-label">Average</div>
+          </div>
+          <div class="statsMetric__Item">
+            <div class="statsMetric__Item-value" id="x_of_x_students_frd">8/45</div>
+            <div class="statsMetric__Item-label" id="gradee"></div>
+          </div>
+        </div>
+        <div class="studentSelection">
+          <button id="prev-student-button" class="Button Button--icon-action gradebookMoveToNext prev" type="button" aria-label="Previous">
+            <i class="icon-arrow-left prev" aria-hidden="true"></i>
+          </button>
+            <div id="avatar" class="gradebookAvatar">
+              <img src="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/8c6ce77f-96f8-4117-9f37-2b35a3a0cc46.png" id="avatar_image" alt="" style="display: inline;">
+            </div>
+          <div id="combo_box_container"><label class="screenreader-only" for="students_selectmenu">Select a student</label><select id="students_selectmenu" class="screenreader-only" tabindex="0" style="display: inline-block;">
+        <optgroup label="Showing: All Sections">
+          
+        <option value="section_all" class="section_all ui-selectmenu-hasIcon">
+          Show all sections
+        </option>
+      
+        <option value="section_210788" class="section_210788  ui-selectmenu-hasIcon">
+          Change section to Section 10
+        </option>
+      
+        <option value="section_210780" class="section_210780  ui-selectmenu-hasIcon">
+          Change section to Section 9
+        </option>
+      
+        </optgroup>
+      
+        <option value="534235" class="graded ui-selectmenu-hasIcon">
+          sophie Baldwin – graded
+        </option>
+      
+        <option value="239147" class="ui-selectmenu-hasIcon graded">Val Bautista - graded</option>
+      
+        <option value="534027" class="ui-selectmenu-hasIcon graded">Jonathan Binene - graded</option>
+      
+        <option value="585091" class="ui-selectmenu-hasIcon graded">William Butler - graded</option>
+      
+        <option value="427367" class="ui-selectmenu-hasIcon graded">Lucille Cadenhead - graded</option>
+      
+        <option value="81197" class="ui-selectmenu-hasIcon graded">Sophia Cadenhead - graded</option>
+      
+        <option value="589371" class="ui-selectmenu-hasIcon graded">Mosiah Carrasco Del Valle - graded</option>
+      
+        <option value="283403" class="not_graded ui-selectmenu-hasIcon" selected="selected">
+          Hannah Cobbley – not graded
+        </option>
+      
+        <option value="584311" class="not_graded ui-selectmenu-hasIcon">
+          Braden Dalton – not graded
+        </option>
+      
+        <option value="584713" class="not_graded ui-selectmenu-hasIcon">
+          Aaron Day – not graded
+        </option>
+      
+        <option value="86901" class="not_graded ui-selectmenu-hasIcon">
+          Dustin Dickerson – not graded
+        </option>
+      
+        <option value="583437" class="resubmitted ui-selectmenu-hasIcon">
+          Tucker Erickson – graded, then resubmitted (Jan 11 at 11:06pm)
+        </option>
+      
+        <option value="586559" class="not_graded ui-selectmenu-hasIcon">
+          David Evans – not graded
+        </option>
+      
+        <option value="224447" class="not_graded ui-selectmenu-hasIcon">
+          Austin Flameling – not graded
+        </option>
+      
+        <option value="415171" class="not_graded ui-selectmenu-hasIcon">
+          James Fluckiger – not graded
+        </option>
+      
+        <option value="588827" class="not_graded ui-selectmenu-hasIcon">
+          Christopher Fulcher Blanco – not graded
+        </option>
+      
+        <option value="588875" class="not_graded ui-selectmenu-hasIcon">
+          Taisei Goto – not graded
+        </option>
+      
+        <option value="593157" class="not_graded ui-selectmenu-hasIcon">
+          Isaac Grover – not graded
+        </option>
+      
+        <option value="166409" class="not_graded ui-selectmenu-hasIcon">
+          Talmage Hales – not graded
+        </option>
+      
+        <option value="547437" class="not_graded ui-selectmenu-hasIcon">
+          Luke Hamblin – not graded
+        </option>
+      
+        <option value="543399" class="not_graded ui-selectmenu-hasIcon">
+          Baker Heggie – not graded
+        </option>
+      
+        <option value="461371" class="resubmitted ui-selectmenu-hasIcon">
+          Ruth Jensen – graded, then resubmitted (Jan 9 at 9:33am)
+        </option>
+      
+        <option value="88525" class="not_graded ui-selectmenu-hasIcon">
+          Andrew Kampelya – not graded
+        </option>
+      
+        <option value="35639" class="resubmitted ui-selectmenu-hasIcon">
+          Getu Keno – graded, then resubmitted (Jan 18 at 4:46pm)
+        </option>
+      
+        <option value="253109" class="not_graded ui-selectmenu-hasIcon">
+          William Lee – not graded
+        </option>
+      
+        <option value="592127" class="not_graded ui-selectmenu-hasIcon">
+          Isaac Legler – not graded
+        </option>
+      
+        <option value="589497" class="not_graded ui-selectmenu-hasIcon">
+          Jared Lipman – not graded
+        </option>
+      
+        <option value="539155" class="not_graded ui-selectmenu-hasIcon">
+          Abarim Morrow – not graded
+        </option>
+      
+        <option value="588879" class="not_graded ui-selectmenu-hasIcon">
+          Sayal Neupane – not graded
+        </option>
+      
+        <option value="588881" class="not_graded ui-selectmenu-hasIcon">
+          Maaya Ono – not graded
+        </option>
+      
+        <option value="500495" class="not_graded ui-selectmenu-hasIcon">
+          Catherine Purushottam – not graded
+        </option>
+      
+        <option value="504255" class="not_graded ui-selectmenu-hasIcon">
+          Brad Rennick – not graded
+        </option>
+      
+        <option value="5474" class="not_graded ui-selectmenu-hasIcon">
+          Brody Richardson – not graded
+        </option>
+      
+        <option value="276963" class="not_graded ui-selectmenu-hasIcon">
+          Ailsa Russell – not graded
+        </option>
+      
+        <option value="339681" class="not_graded ui-selectmenu-hasIcon">
+          Taylor Saxton – not graded
+        </option>
+      
+        <option value="588887" class="not_graded ui-selectmenu-hasIcon">
+          Darren Sheffer – not graded
+        </option>
+      
+        <option value="502685" class="not_graded ui-selectmenu-hasIcon">
+          Adelyn Smith – not graded
+        </option>
+      
+        <option value="63581" class="not_graded ui-selectmenu-hasIcon">
+          Josh Sparks – not graded
+        </option>
+      
+        <option value="582313" class="not_graded ui-selectmenu-hasIcon">
+          Mariam Tencio – not graded
+        </option>
+      
+        <option value="584289" class="not_graded ui-selectmenu-hasIcon">
+          Edson Whipple – not graded
+        </option>
+      
+        <option value="592757" class="resubmitted ui-selectmenu-hasIcon">
+          Jarom Williams – graded, then resubmitted (Jan 9 at 4:36pm)
+        </option>
+      
+        <option value="468493" class="not_graded ui-selectmenu-hasIcon">
+          Benjamin Wolfley – not graded
+        </option>
+      
+        <option value="248007" class="not_graded ui-selectmenu-hasIcon">
+          Sunny Yeung – not graded
+        </option>
+      
+        <option value="406147" class="not_graded ui-selectmenu-hasIcon">
+          Jacob Zurek – not graded
+        </option>
+      
+        <option value="618729" class="graded ui-selectmenu-hasIcon">
+          Test Student – graded
+        </option>
+      </select><span><a class="ui-selectmenu ui-widget ui-state-default ui-corner-all ui-selectmenu-dropdown graded not_graded ui-selectmenu-hasIcon" id="students_selectmenu-button" href="#nogo" tabindex="-1" style="width: 230px; margin: 0px;" aria-hidden="true"><span class="ui-selectmenu-status graded">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Hannah Cobbley
+        </span>
+    </span><span class="ui-selectmenu-icon ui-icon-triangle-1-s"><i class="icon-mini-arrow-down"></i></span></a></span></div>
+          <button id="next-student-button" class="Button Button--icon-action gradebookMoveToNext next" type="button" aria-label="Next">
+            <i class="icon-arrow-right next" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div></form>
+  </nav>
+  <figure id="enrollment_inactive_notice" class="alert alert-info" style="display: none;">
+    <span>Notice: Inactive Student</span>
+  </figure>
+  <figure id="enrollment_concluded_notice" class="alert alert-info" style="display: none;">
+    <span>Notice: Concluded Student</span>
+  </figure>
+  <figure id="closed_gp_notice" class="alert alert-info" style="display:none">
+    <span>Notice: The grading period is closed for this student</span>
+  </figure>
+  <section id="full_width_container" style="flex: 1 1 0%;">
+    <div id="left_side" class="full_height" style="width: 27.7344%;">
+      <div id="left_side_inner">
+        <div id="no_annotation_warning" class="alert speedgrader_alert" style="display: none;">
+          <a class="dismiss_alert close" href="#">×</a>
+          Annotations are not available for this document
+        </div>
+        <div id="crocodoc_pending" class="alert speedgrader_alert" style="display: none;">
+          <a class="dismiss_alert close" href="#">×</a>
+          Crocodoc is still processing this document.
+        </div>
+        <div id="comment_saved" class="alert alert-success speedgrader_alert" style="display: none;">
+          <button aria-label="Close" class="dismiss_alert close">×</button>
+          <div id="comment_saved_message">
+            Your comment was auto-saved as a draft.
+          </div>
+        </div>
+        <div id="comment_submitted" class="alert alert-success speedgrader_alert" style="display: none;">
+          <button aria-label="Close" class="dismiss_alert close">×</button>
+          <div id="comment_submitted_message" tabindex="-1">
+            Your comment has been submitted.
+          </div>
+        </div>
+        <div id="reassignment_complete" class="alert alert-success speedgrader_alert" style="display: none;">
+          <button aria-label="Close" class="dismiss_alert close">×</button>
+          <div id="reassignment_complete_message">
+            The assignment has been reassigned.
+          </div>
+        </div>
+        <div id="submissions_container">
+          <div id="this_student_does_not_have_a_submission" style="display: none;">
+            <h3>
+                This student does not have a submission for this assignment
+            </h3>
+          </div>
+          <div id="this_student_has_a_submission" style="display: none;">
+            <h3>
+              This student has submitted the assignment
+              <span class="subheader">This student's responses are hidden because this assignment is anonymous.</span>
+            </h3>
+          </div>
+          <div id="iframe_holder" style="display: block;"><div style="overflow: auto; resize: vertical; border: 1px solid transparent; height: 100%;"><iframe src="/api/v1/canvadoc_session?blob=%7B%22anonymous_instructor_annotations%22:false,%22enable_annotations%22:true,%22moderated_grading_allow_list%22:null,%22submission_id%22:390242160,%22disable_annotation_notifications%22:false,%22enrollment_type%22:%22ta%22,%22user_id%22:107060000000005499,%22attachment_id%22:100726650,%22type%22:%22canvadoc%22%7D&amp;hmac=daeeccc25608a066f7d5862818a92dbb52ddf2df" allowfullscreen="1" style="border: 0; overflow: auto; height: 99%; min-height: 0" id="speedgrader_iframe" width="100%"></iframe></div></div>
+          <div id="resize_overlay" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+    <div id="right_side" class="full_height" style="width: 72.2656%;">
+      <div id="not_gradeable_message" style="display: none;">This submission has already been graded and is ready for moderation.</div>
+      <div class="full_height ui-draggable" id="width_resizer" style="left: 0px;"></div>
+      <div class="right_side_content">
+        <div id="rightside_inner" class="full_height">
+          <div class="secondary_mount_point_container">
+            <div id="speed_grader_edit_status_secondary_mount_point"></div>
+          </div>
+          <div id="submission_details" class="content_box">
+            <div style="display: flex;">
+              <div id="multiple_submissions" style="display:flex; flex: 1">
+  
+    
+      <label>Submitted:</label> Jan 7 at 9:58pm
+    
+    
+      
+        
+          
+        
+      
+    
+  
+
+
+</div>
+              <div id="speed_grader_edit_status_mount_point"><span direction="row" wrap="no-wrap" class="fOyUs_bGBk fOyUs_desw bDzpk_bGBk bDzpk_crdn bDzpk_fZWR bDzpk_qOas"><span class="fOyUs_bGBk dJCgj_bGBk"><span data-position="uOe7p7PLUam6"><button aria-haspopup="true" id="uYpVVUanUUKy" aria-expanded="false" data-popover-trigger="true" data-position-target="uOe7p7PLUam6" cursor="pointer" type="button" tabindex="0" class="fOyUs_bGBk fOyUs_fKyb fOyUs_cuDs fOyUs_cBHs fOyUs_eWbJ fOyUs_fmDy fOyUs_eeJl fOyUs_cBtr fOyUs_fuTR fOyUs_cnfU fQfxa_bGBk" style="margin: 0px 0px 0.75rem; padding: 0px; border-radius: 0.25rem; border-width: 0px; width: auto; cursor: pointer;"><span class="fQfxa_caGd fQfxa_VCXp fQfxa_buuG fQfxa_EMjX undefined fQfxa_dqAF fQfxa_bIHL"><span direction="row" wrap="no-wrap" class="fOyUs_bGBk fOyUs_desw bDzpk_bGBk bDzpk_eRIA bDzpk_fZWR bDzpk_qOas" style="width: 100%; height: 100%;"><span class="fOyUs_bGBk dJCgj_bGBk"><span class="fQfxa_eoCh"><svg name="IconEdit" viewBox="0 0 1920 1920" rotate="0" style="width: 1em; height: 1em;" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_owrh"><g role="presentation"><path d="M277.974095,49.0764867 C343.241473,-16.3028415 449.706783,-16.4147924 515.421964,49.0764867 L515.421964,49.0764867 L747.608139,281.262662 L1803.30517,1337.07164 L1919.95801,1920 L1337.02965,1803.34716 L386.902325,853.331783 L466.051615,774.182494 L1267.84399,1575.86292 L1575.82093,1267.88598 L668.45885,360.411952 L281.220672,747.65013 L49.0344961,515.463954 C-16.344832,449.860724 -16.344832,343.395414 49.0344961,278.016086 L49.0344961,278.016086 Z M1654.97022,1347.03527 L1346.99328,1655.01221 L1392.1095,1700.12842 L1777.10866,1777.15065 L1700.08643,1392.15149 L1654.97022,1347.03527 Z M675.355026,596.258922 L1367.65942,1288.56331 L1288.51013,1367.7126 L596.205736,675.408211 L675.355026,596.258922 Z M396.642054,111.880944 C382.312338,111.880944 368.094573,117.254587 357.123385,128.225776 L357.123385,128.225776 L128.183785,357.165375 C106.46531,378.883851 106.46531,414.484238 128.183785,436.314665 L128.183785,436.314665 L281.220672,589.351551 L589.30956,281.262662 L436.272674,128.225776 C425.301486,117.254587 410.97177,111.880944 396.642054,111.880944 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg></span><span class="ergWt_bGBk">Edit status</span></span></span></span></button></span></span></span></div>
+            </div>
+            <div id="submission_not_newest_notice" title="use the dropdown above to change which submission to look at" style="display: none;">Note: This is not the most recent submission</div>
+            <div id="submission_attachment_viewed_at_container">
+
+</div>
+            <div id="submission_word_count"></div>
+            <div id="submission_files_container">
+              <label>Submitted Files: <span class="labelText--not-bold">(click to load)</span>&nbsp;</label>
+              <div id="submission_files_list"><div class="submission-file" style="">
+                  <span class="turnitin_score_container"></span>
+                  <a class="display_name no-hover" href="https://byui.instructure.com/courses/211012/assignments/10483503/submissions/283403?download=100726650&amp;inline=1" title="Preview this File">01Prove.py</a>
+                  <span id="react_pill_container"></span>
+                  <a class="submission-file-delete icon-trash" href="https://byui.instructure.com/api/v1/files/100726650?replace=1" style="display:none;">
+                    <span class="screenreader-only">Delete this file</span>
+                  </a>
+                  <a class="submission-file-download icon-download" href="https://byui.instructure.com/courses/211012/assignments/10483503/submissions/283403?download=100726650" download="">
+                    <span class="screenreader-only">Download this file</span>
+                  </a>
+                </div></div>
+              <div class="turnitin_info_container"></div>
+            </div>
+          </div>
+
+          <div class="content_box">
+            <div id="rubric_full" style="display: none;">
+                <h2>Grading</h2>
+                <div id="rubric_holder" style="opacity: 1; display: block;">
+                  
+<div class="rubric_container rubric assessing for_grading" id="rubric_1960302" style=""><div class="react-rubric" style="min-width: 60rem;"><table class="fOyUs_bGBk erOvu_bGBk"><caption><span class="ergWt_bGBk">CSE 110 Assignment Rubric - 50 pts</span></caption><thead class="bGgTf_bGBk"><tr style="visibility: collapse;"><th class="dEBmf_bGBk dEBmf_fsuY dEBmf_EMjX" scope="col" aria-sort="none" tabindex="-1" style="width: 20%;">Criteria</th><th class="dEBmf_bGBk dEBmf_fsuY dEBmf_EMjX" scope="col" aria-sort="none">Ratings</th><th class="dEBmf_bGBk dEBmf_fsuY dEBmf_EMjX" scope="col" aria-sort="none" style="width: 20%;">Pts</th></tr><tr class="fOyUs_bGBk eIQkd_bGBk"><th colspan="3" class="dEBmf_bGBk dEBmf_fsuY dEBmf_EMjX" scope="col" aria-sort="none">CSE 110 Assignment Rubric - 50 pts</th></tr><tr class="fOyUs_bGBk eIQkd_bGBk"><th class="dEBmf_bGBk dEBmf_fsuY dEBmf_EMjX" scope="col" aria-sort="none" style="width: 20%;">Criteria</th><th class="dEBmf_bGBk dEBmf_fsuY dEBmf_EMjX" scope="col" aria-sort="none">Ratings</th><th class="dEBmf_bGBk dEBmf_fsuY dEBmf_EMjX" scope="col" aria-sort="none" style="width: 20%;">Pts</th></tr></thead><tbody data-testid="criterions" class="fOyUs_bGBk bGgTf_bGBk"><tr data-testid="rubric-criterion" class="fOyUs_bGBk eIQkd_bGBk"><th scope="row" class="fOyUs_bGBk erWSf_bGBk erWSf_EMjX"><div class="description react-rubric-cell"><span wrap="normal" letter-spacing="normal" class="enRcg_bGBk enRcg_doqw enRcg_drST enRcg_eQnG">Grade</span></div><div class="long-description"><button type="button" class="fOyUs_bGBk fOyUs_UeJS fbyHH_bGBk fbyHH_vIby"><span wrap="normal" letter-spacing="normal" class="enRcg_bGBk enRcg_dfBC enRcg_eQnG">view longer description</span></button></div></th><td class="fOyUs_bGBk ccWIh_bGBk ccWIh_EMjX"><div><span direction="row" wrap="no-wrap" class="fOyUs_bGBk fOyUs_desw bDzpk_bGBk bDzpk_busO bDzpk_fZWR bDzpk_qOas"><span class="fOyUs_bGBk dJCgj_bGBk dJCgj_ffgL" style="width: 16.6667%;"><div class="rating-tier assessing" role="button" tabindex="0"><div class="rating-points"><span wrap="normal" letter-spacing="normal" class="enRcg_bGBk enRcg_doqw enRcg_bdMA enRcg_eQnG">50 pts</span></div><div class="rating-description"><span wrap="normal" letter-spacing="normal" class="enRcg_bGBk enRcg_doqw enRcg_bdMA enRcg_dfDs enRcg_eQnG">Shows creativity and exceeds requirements</span></div><span wrap="normal" letter-spacing="normal" class="enRcg_bGBk enRcg_doqw enRcg_dfDs enRcg_eQnG">Shows creativity and exceeds minimum assignment requirements</span><div class="rating-footer"></div><div class="shader" style="background-color: transparent;"><div class="triangle" style="border-bottom-color: transparent;"></div></div></div></span><span class="fOyUs_bGBk dJCgj_bGBk dJCgj_ffgL" style="width: 16.6667%;"><div class="rating-tier selected assessing" role="button" tabindex="0"><div class="rating-points"><span wrap="normal" letter-spacing="normal" class="enRcg_bGBk enRcg_doqw enRcg_bdMA enRcg_eQnG">46.5 pts</span></div><div class="rating-description"><span wrap="normal" letter-spacing="normal" class="enRcg_bGBk enRcg_doqw enRcg_bdMA enRcg_dfDs enRcg_eQnG">Meets requirements</span></div><span wrap="normal" letter-spacing="normal" class="enRcg_bGBk enRcg_doqw enRcg_dfDs enRcg_eQnG">Meets all the minimum requirements specified in the assignment instructions</span><div class="rating-footer"></div><div class="shader nearMasteryShader" style="" aria-label="This rating is selected"><div class="triangle" style=""></div></div></div></span><span class="fOyUs_bGBk dJCgj_bGBk dJCgj_ffgL" style="width: 16.6667%;"><div class="rating-tier assessing" role="button" tabindex="0"><div class="rating-points"><span wrap="normal" letter-spacing="normal" class="enRcg_bGBk enRcg_doqw enRcg_bdMA enRcg_eQnG">42.5 pts</span></div><div class="rating-description"><span wrap="normal" letter-spacing="normal" class="enRcg_bGBk enRcg_doqw enRcg_bdMA enRcg_dfDs enRcg_eQnG">Slightly deficient</span></div><span wrap="normal" letter-spacing="normal" class="enRcg_bGBk enRcg_doqw enRcg_dfDs enRcg_eQnG">Missing a minor requirement</span><div class="rating-footer"></div><div class="shader" style="background-color: transparent;"><div class="triangle" style="border-bottom-color: transparent;"></div></div></div></span><span class="fOyUs_bGBk dJCgj_bGBk dJCgj_ffgL" style="width: 16.6667%;"><div class="rating-tier assessing" role="button" tabindex="0"><div class="rating-points"><span wrap="normal" letter-spacing="normal" class="enRcg_bGBk enRcg_doqw enRcg_bdMA enRcg_eQnG">37.5 pts</span></div><div class="rating-description"><span wrap="normal" letter-spacing="normal" class="enRcg_bGBk enRcg_doqw enRcg_bdMA enRcg_dfDs enRcg_eQnG">Developing (but significantly deficient)</span></div><span wrap="normal" letter-spacing="normal" class="enRcg_bGBk enRcg_doqw enRcg_dfDs enRcg_eQnG">Missing multiple requirements</span><div class="rating-footer"></div><div class="shader" style="background-color: transparent;"><div class="triangle" style="border-bottom-color: transparent;"></div></div></div></span><span class="fOyUs_bGBk dJCgj_bGBk dJCgj_ffgL" style="width: 16.6667%;"><div class="rating-tier assessing" role="button" tabindex="0"><div class="rating-points"><span wrap="normal" letter-spacing="normal" class="enRcg_bGBk enRcg_doqw enRcg_bdMA enRcg_eQnG">25 pts</span></div><div class="rating-description"><span wrap="normal" letter-spacing="normal" class="enRcg_bGBk enRcg_doqw enRcg_bdMA enRcg_dfDs enRcg_eQnG">Some attempt made</span></div><span wrap="normal" letter-spacing="normal" class="enRcg_bGBk enRcg_doqw enRcg_dfDs enRcg_eQnG">Some attempt was made, but missing most requirements</span><div class="rating-footer"></div><div class="shader" style="background-color: transparent;"><div class="triangle" style="border-bottom-color: transparent;"></div></div></div></span><span class="fOyUs_bGBk dJCgj_bGBk dJCgj_ffgL" style="width: 16.6667%;"><div class="rating-tier assessing" role="button" tabindex="0"><div class="rating-points"><span wrap="normal" letter-spacing="normal" class="enRcg_bGBk enRcg_doqw enRcg_bdMA enRcg_eQnG">0 pts</span></div><div class="rating-description"><span wrap="normal" letter-spacing="normal" class="enRcg_bGBk enRcg_doqw enRcg_bdMA enRcg_dfDs enRcg_eQnG">Nothing submitted</span></div><span wrap="normal" letter-spacing="normal" class="enRcg_bGBk enRcg_doqw enRcg_dfDs enRcg_eQnG">No attempt was made to complete the assignment</span><div class="rating-footer"></div><div class="shader" style="background-color: transparent;"><div class="triangle" style="border-bottom-color: transparent;"></div></div></div></span></span></div></td><td data-testid="criterion-points" class="fOyUs_bGBk ccWIh_bGBk ccWIh_EMjX"><div class="react-rubric-cell graded-points"><span wrap="wrap" direction="row" class="fOyUs_bGBk fOyUs_desw bDzpk_bGBk bDzpk_busO bDzpk_fncw bDzpk_dyGy bDzpk_qOas"><span class="fOyUs_bGBk dJCgj_bGBk" style="margin: 0px 0.75rem 0px 0px; min-width: 4rem; flex-basis: 4rem;"><label for="uCHTxeUk2Pjs" class="cWmNi_bGBk cWmNi_eXrk" style="width: 4rem;"><span class="cMIPy_bGBk"><span class="fxIji_bGBk fxIji_DpxJ fxIji_bWOh fxIji_NmrE fxIji_buDT fxIji_bBOa"><span class="ergWt_bGBk">Points</span><span class="bNerA_bGBk bNerA_NmrE bNerA_qfdC bNerA_bBOa bNerA_buDT bNerA_DpxJ bNerA_eFno"><span class="qBMHb_cSXm"><input id="uCHTxeUk2Pjs" class="qBMHb_cwos qBMHb_ycrn qBMHb_EMjX" type="text" value="46.5" width="4rem"></span></span></span></span></label></span><span class="fOyUs_bGBk dJCgj_bGBk" style="margin: 0.75rem 0px 0px;">/ 50 pts</span></span></div><div><button cursor="pointer" type="button" tabindex="0" class="fOyUs_bGBk fOyUs_fKyb fOyUs_cuDs fOyUs_cBHs fOyUs_eWbJ fOyUs_fmDy fOyUs_eeJl fOyUs_cBtr fOyUs_fuTR fOyUs_cnfU fQfxa_bGBk" style="margin: 0px 0.5rem 0px 0px; padding: 0px; border-radius: 0.25rem; border-width: 0px; width: auto; cursor: pointer;"><span class="fQfxa_caGd fQfxa_fKcQ fQfxa_buuG fQfxa_EMjX fQfxa_bCUx fQfxa_bVmg fQfxa_bIHL"><span direction="row" wrap="no-wrap" class="fOyUs_bGBk fOyUs_desw bDzpk_bGBk bDzpk_eRIA bDzpk_fZWR bDzpk_qOas" style="width: 100%; height: 100%;"><span class="fOyUs_bGBk dJCgj_bGBk"><span class="fQfxa_eoCh"><svg name="IconFeedback" viewBox="0 0 1920 1920" rotate="0" style="width: 1em; height: 1em;" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_owrh"><g role="presentation"><path d="M84,0 L84,1423.14253 L521.875,1423.14253 L521.875,1920 L1143.11016,1423.14253 L1835.5,1423.14253 L1835.5,0 L84,0 Z M193.46875,109.464082 L1726.03125,109.464082 L1726.03125,1313.56899 L1104.79609,1313.56899 L631.34375,1692.31471 L631.34375,1313.56899 L193.46875,1313.56899 L193.46875,109.464082 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg></span><span class="ergWt_bGBk">Add Additional Comments</span></span></span></span></button></div></td></tr><tr class="fOyUs_bGBk eIQkd_bGBk"><td colspan="3" class="fOyUs_bGBk ccWIh_bGBk ccWIh_EMjX"><span direction="row" wrap="no-wrap" class="fOyUs_bGBk fOyUs_desw bDzpk_bGBk bDzpk_crdn bDzpk_fZWR bDzpk_qOas"><span data-selenium="rubric_total" class="fOyUs_bGBk dJCgj_bGBk">Total Points: 46.5 out of 50</span></span></td></tr></tbody></table></div></div>
+<table style="display: none;">
+  <tbody><tr id="edit_rubric">
+    <td colspan="4">
+      <form id="edit_rubric_form" class="edit-rubric-form no-margin-bottom">
+        <div class="rubric_custom_ratings" style="">
+          <input type="checkbox" id="rubric_custom_rating" class="rubric_custom_rating">
+          <label for="rubric_custom_rating">I'll write free-form comments when assessing students</label>
+        </div>
+          <div class="hide_points" style="">
+            <input type="checkbox" id="hide_points" class="hide_points_checkbox">
+            <label for="hide_points">Remove points from rubric</label>
+          </div>
+          <div class="hide_outcome_results" style="">
+            <input type="checkbox" id="hide_outcome_results" class="hide_outcome_results_checkbox">
+            <label for="hide_outcome_results">Don't post Outcomes results to Learning Mastery Gradebook</label>
+          </div>
+          <div class="rubric_grading" style="">
+            <input type="checkbox" id="grading_rubric" class="grading_rubric_checkbox" checked="checked">
+            <label for="grading_rubric">Use this rubric for assignment grading</label>
+          </div>
+        <div class="totalling_rubric" style="">
+          <input type="checkbox" id="totalling_rubric" class="totalling_rubric_checkbox">
+          <label for="totalling_rubric">Hide score total for assessment results</label>
+        </div>
+        <div class="ic-Action-header ic-Action-header--half-margin">
+          <div class="ic-Action-header__Primary">
+            <button type="button" class="Button cancel_button">Cancel</button>
+            <button type="submit" class="Button Button--primary save_button">Create Rubric</button>
+          </div>
+        </div>
+      </form>
+    </td>
+  </tr>
+</tbody></table>
+
+                  <div class="button-container">
+                      <button type="button" class="save_rubric_button Button Button--primary">Save</button>
+                    <button type="button" class="hide_rubric_link Button">Cancel</button>
+                  </div>
+                  <a href="https://byui.instructure.com/courses/211012/rubric_associations/4035045/assessments" class="update_rubric_assessment_url" style="display: none;">&nbsp;</a>
+                  
+<div id="rubric_long_description_dialog" style="display: none;">
+  <div class="editing">
+    <form id="edit_criterion_form" class="no-margin-bottom">
+      <div>
+        <label class="rating_form_label">Description
+          <textarea class="description" rows="1" name="description"></textarea>
+        </label>
+      </div>
+      <div>
+        <label class="rating_form_label">Long Description
+          <textarea class="long_description" rows="4" name="long_description"></textarea>
+        </label>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn btn button-secondary cancel_button">Cancel</button>
+        <button type="button" class="btn save_button btn-primary">Update Criterion</button>
+      </div>
+    </form>
+  </div>
+  <div class="displaying">
+    <div class="long_description">
+    </div>
+  </div>
+</div>
+<div id="rubric_criterion_comments_dialog" style="display: none;">
+  <div class="criterion_description" style="border-bottom: 1px solid #ccc; padding: 5px 0; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;" tabindex="-1"></div>
+  <div class="editing">
+    <label for="criterion_comments_textarea">
+      Additional Comments:
+    </label>
+    <textarea id="criterion_comments_textarea" class="criterion_comments" name="criterion_comments" style="width: 370px;"></textarea>
+    <div class="button-container">
+      <button type="button" class="btn btn button-secondary cancel_button">Cancel</button>
+      <button type="button" class="btn save_button">Update Comments</button>
+    </div>
+  </div>
+  <div class="displaying">
+    Additional Comments:
+    <div class="criterion_comments" style="margin-top: 10px;">
+    </div>
+  </div>
+</div>
+<div id="rubric_rating_dialog" style="display: none;">
+  <div class="description" style="border-bottom: 1px solid #ccc; padding: 5px 0; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;">
+    <span id="edit_rating_form_criterion_description"></span>
+  </div>
+  <div class="editing">
+    <form id="edit_rating_form" class="no-margin-bottom">
+      <div class="toggle_for_hide_points">
+        <div><label id="rating_form_score_label" class="rating_form_label">Rating Score</label></div>
+        <span id="rating_form_max_score_label" hidden="">Rating max score</span>
+        <input id="points" aria-labelledby="rating_form_score_label" type="text" size="2" name="points" class="no-margin-bottom span1">
+        <span class="range_rating">to &gt;
+          <input aria-label="Rating min score" type="text" size="2" name="min_points" class="no-margin-bottom span1 min_points" placeholder="min">
+        </span>pts
+      </div>
+      <div>
+        <label for="rating_form_title" class="rating_form_label">Rating Title</label>
+        <input id="rating_form_title" type="text" class="rating_description" style="width: 90%;" name="description">
+      </div>
+      <div>
+        <label for="rating_form_description" class="rating_form_label">Rating Description</label>
+        <textarea id="rating_form_description" rows="4" style="width: 90%;" class="rating_long_description" name="rating_long_description" form="edit_rating_form"></textarea>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn button-secondary cancel_button">Cancel</button>
+        <button type="button" class="btn btn-primary save_button ok_button">Update Rating</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+                </div>
+            </div>
+
+            <div id="grades-loading-spinner"></div>
+            <div id="grading" style="height: auto; display: block;">
+              <h2 class="gradebookHeader--rightside">Assessment</h2>
+                <div id="grade_container">
+                  
+
+<label class="bold" for="grading-box-extended">
+  <div id="grading-box-points-possible">
+    Grade
+      out of 50
+  </div>
+
+  <div id="speed_grader_hidden_submission_pill_mount_point"></div>
+
+    <input type="text" id="grading-box-extended" autocomplete="off" maxlength="254">
+
+  <span id="grading-box-selected-grader"></span>
+</label>
+
+<div id="deduction-box" class="hidden">
+  <div class="deduction-box-labels">
+    <div class="error">
+      Late Penalty:
+    </div>
+    <div class="primary">
+      Final Grade:
+    </div>
+  </div>
+  <div class="deduction-box-values">
+    <div id="points-deducted" class="error bold"></div>
+    <div id="final-grade" class="primary bold"></div>
+  </div>
+</div>
+
+                  <span class="turnitin_score_container"></span>
+                  <a href="#" id="submit_same_score" style="display: none;"><br>Use this same grade for the resubmission</a>
+                  <div class="turnitin_info_container"></div>
+                </div>
+
+                <div id="grading_details_mount_point"></div>
+
+                <div id="rubric_summary_holder">
+                  <div id="rubric_assessments_list_and_edit_button_holder">
+                    <span id="rubric_assessments_list" style="display: none;">
+                      <h2>Select Rubric</h2>
+                      <select id="rubric_assessments_select"></select>
+                    </span>
+                  <div class="button-container" style="">
+  <button class="toggle_full_rubric edit btn">View Rubric</button>
+</div></div>
+                  <div id="rubric_summary_container">
+                    
+<div class="rubric_container rubric rubric_summary " id="rubric_summary_1960302" style="hidden"></div>
+
+
+                  </div>
+                </div>
+
+              <div id="speed_grader_assessment_audit_button_mount_point"></div>
+            </div><!-- end #grading -->
+          </div>
+
+          <div class="content_box">
+            <h2>
+                Assignment Comments
+            </h2>
+            <div id="discussion">
+              <div id="comments"><div class="comment" style="display: block;">
+                  <div class="comment_flex">
+                    <img src="01%20Prove%20Assignment,%20SpeedGrader,%20Programming%20Building%20Blocks_files/8c6ce77f-96f8-4117-9f37-2b35a3a0cc46.png" class="avatar" alt="" style="display: inline;">
+                    
+                    <span class="comment">5, I added two variables and also personality to my code.</span>
+                    
+                    <a href="javascript:void 0;" class="delete_comment_link icon-x" style="display: inline;">
+                      <span class="screenreader-only">Delete comment: 5, I added two variables and also personality to my code.</span>
+                    </a>
+                  </div>
+                  <a href="#" class="play_comment_link media-comment" style="display:none;">
+                    click here to view
+                  </a>
+                  <div class="media_comment_content" style="display:none"></div>
+                  <div class="comment_attachments"></div>
+                  <div class="comment_citation">
+                    <span class="author_name">Hannah Cobbley</span>,
+                    <span class="posted_at">Jan 7 at 9:58pm</span>
+                  </div>
+                </div></div>
+            </div>
+
+              <form id="add_a_comment">
+                <div id="speed_grader_comment_textarea_mount_point"><span direction="row-reverse" wrap="no-wrap" class="fOyUs_bGBk fOyUs_desw bDzpk_bGBk bDzpk_busO bDzpk_fZWR bDzpk_sGoV" style="padding: 1.5rem 0px 0.375rem 0.75rem;"><span class="fOyUs_bGBk dJCgj_bGBk"><div class="fOyUs_bGBk fOyUs_desw" style="padding: 0px 0px 0px 0.5rem;"><button data-testid="comment-library-link" type="button" class="fOyUs_bGBk fOyUs_cuDs fbyHH_bGBk fbyHH_ddMx fbyHH_bSMN"><span class="fbyHH_dnnz"><span data-position="umOe6jZVzyLm"><svg aria-describedby="uZj2yUYYkfgU" data-popover-trigger="true" data-position-target="umOe6jZVzyLm" name="IconComment" viewBox="0 0 1920 1920" rotate="0" style="width: 1em; height: 1em;" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk"><g role="presentation"><path d="M1662.17776,0 L1662.17776,1359.96362 L1013.47511,1359.96362 L453.321206,1920.11752 L453.321206,1359.96362 L0,1359.96362 L0,0 L1662.17776,0 Z M1511.07069,151.107069 L151.107069,151.107069 L151.107069,1208.85655 L604.428275,1208.85655 L604.428275,1555.34506 L950.916784,1208.85655 L1511.07069,1208.85655 L1511.07069,151.107069 Z M906.79352,755.550454 L906.79352,873.079027 L453.321206,873.079027 L453.321206,755.550454 L906.79352,755.550454 Z M1208.85655,453.18521 L1208.85655,570.713782 L453.321206,570.713782 L453.321206,453.18521 L1208.85655,453.18521 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg></span></span><span class="ergWt_bGBk">Open Comment Library</span><span data-testid="comment-library-count" aria-hidden="true">0</span></button></div></span></span><div id="textarea-container"><label for="speed_grader_comment_textarea" class="cWmNi_bGBk"><span class="cMIPy_bGBk"><span class="fxIji_bGBk fxIji_DpxJ fxIji_bWOh fxIji_oUBk fxIji_buDT fxIji_bBOa"><span class="ergWt_bGBk">Add a Comment</span><span class="bNerA_bGBk bNerA_oUBk bNerA_qfdC bNerA_bBOa bNerA_buDT bNerA_DpxJ bNerA_eFno"><div class="chpSa_byIz" style="min-height: 4rem;"><textarea placeholder="Add a Comment" style="resize: vertical; height: 4rem; overflow-y: hidden;" id="speed_grader_comment_textarea" aria-required="false" class="chpSa_blLZ chpSa_ycrn"></textarea><span class="chpSa_cPAP" aria-hidden="true"></span></div></span></span></span></label></div><div id="library-suggestions"></div></div>
+                <div id="media_media_recording" style="display: none;">
+                  <div class="media_recording"></div>
+                </div>
+
+                <div id="comment_attachments"></div>
+                
+                <div class="ic-Action-header">
+                  <div id="emojis-attachments-container">
+                    <span id="emoji-quick-picker-container"></span>
+                    <div class="ic-Action-header__Primary attach_things" role="group">
+                      <button class="Button Button--small" id="add_attachment" title="File Attachment" type="button">
+                        <i class="icon-paperclip" aria-hidden="true"></i>
+                        <span class="screenreader-only">
+                          File Attachment
+                        </span>
+                      </button>
+                        <button id="media_comment_button" class="Button Button--small media_comment_link" title="Media Comment " type="button">
+                          <i class="icon-media" aria-hidden="true"></i>
+                          <span class="screenreader-only">
+                            Media Comment
+                          </span>
+                        </button>
+                      <div class="speech-recognition" style="display:none">
+                        <a id="speech_recognition_button" title="Speech Recognition" href="#" class="Button Button--small speech_recognition_link">
+                          <i class="icon-audio"></i>
+                          <span class="screenreader-only">
+                            Speech Recognition
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ic-Action-header__Secondary">
+                    <button id="comment_submit_button" class="Button Button--primary" type="submit">Submit</button>
+                  </div>
+                </div>
+              </form>
+
+                <div id="reassign_assignment_wrapper" title="" aria-describedby="ui-tooltip-10">
+                  <button id="reassign_assignment" class="Button" disabled="disabled">Reassign Assignment</button>
+                </div>
+
+            <div id="speed_grader_submission_comments_download_mount_point"><a href="https://byui.instructure.com/submissions/390242160/comments.pdf" target="_blank">Download Submission Comments</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <a style="display:none;" id="assignment_submission_turnitin_report_url" href="https://byui.instructure.com/courses/211012/assignments/10483503/submissions/%7B%7B%20user_id%20%7D%7D/turnitin/%7B%7B%20asset_string%20%7D%7D"></a>
+    <a style="display:none;" id="assignment_submission_originality_report_url" href="https://byui.instructure.com/courses/211012/assignments/10483503/submissions/%7B%7B%20user_id%20%7D%7D/originality_report/%7B%7B%20asset_string%20%7D%7D"></a>
+    <a style="display:none;" id="assignment_submission_resubmit_to_turnitin_url" href="https://byui.instructure.com/courses/211012/assignments/10483503/submissions/%7B%7B%20user_id%20%7D%7D/turnitin/resubmit"></a>
+    <a style="display:none;" id="assignment_submission_vericite_report_url" href="https://byui.instructure.com/courses/211012/assignments/10483503/submissions/%7B%7B%20user_id%20%7D%7D/vericite/%7B%7B%20asset_string%20%7D%7D"></a>
+    <a style="display:none;" id="assignment_submission_resubmit_to_vericite_url" href="https://byui.instructure.com/courses/211012/assignments/10483503/submissions/%7B%7B%20user_id%20%7D%7D/vericite/resubmit"></a>
+
+  
+
+  
+
+  <div id="speed_grader_assessment_audit_tray_mount_point"></div>
+  <div id="hide-assignment-grades-tray"></div>
+  <div id="post-assignment-grades-tray"></div>
+
+  <span id="aria_name_alert" class="screenreader-only" aria-live="polite">Hannah Cobbley - not graded</span>
+
+</div>
+
+          <p id="byui-copyright">Copyright 2023 Brigham Young University-Idaho</p></div>
+        </div>
+        <div id="right-side-wrapper" class="ic-app-main-content__secondary">
+          <aside id="right-side" role="complementary">
+            
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div id="keyboard_navigation">
+      <ul class="navigation_list" tabindex="-1">
+  <li>
+    <span class="keycode">j</span>
+    <span class="colon">:</span>
+    <span class="description">Next Student</span>
+  </li>
+  <li>
+    <span class="keycode">k</span>
+    <span class="colon">:</span>
+    <span class="description">Previous Student</span>
+  </li>
+  <li>
+    <span class="keycode">c</span>
+    <span class="colon">:</span>
+    <span class="description">Leave Comment</span>
+  </li>
+  <li>
+    <span class="keycode">g</span>
+    <span class="colon">:</span>
+    <span class="description">Change Grade</span>
+  </li>
+  <li>
+    <span class="keycode">r</span>
+    <span class="colon">:</span>
+    <span class="description">Use Rubric</span>
+  </li>
+</ul>
+      <div class="hidden-readable" tabindex="0">
+        Press comma to close this dialog
+      </div>
+    </div>
+    <div style="display:none;"><!-- Everything inside of this should always stay hidden -->
+        <div id="page_view_id">3c4af5c7-540c-412e-afc3-79bc2cbd414f</div>
+    </div>
+  <div id="aria_alerts" class="hide-text affix" role="alert" aria-live="assertive"></div>
+  <div id="StudentTray__Container"></div>
+    <div class="NewUserTutorialTray__Container"></div>
+  
+
+  <script>
+    Object.assign(
+      ENV,
+      {}
+    )
+  </script>
+
+<link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/inst_fs_service_worker-c-cf69d8b6de.js" as="script" type="text/javascript"><script>
+//<![CDATA[
+(window.bundles || (window.bundles = [])).push('inst_fs_service_worker');
+//]]>
+</script>
+  <script>
+//<![CDATA[
+
+      ;["https://instructure-uploads.s3.amazonaws.com/account_107060000000000001/attachments/95448974/byui.js", "https://instructure-uploads.s3.amazonaws.com/account_107060000000000001/attachments/95446690/campus.js"].forEach(function(src) {
+        var s = document.createElement('script'); s.src = src; s.async = false;
+        document.head.appendChild(s)
+      });
+//]]>
+</script>
+
+</div> <!-- #application -->
+
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-dialog-buttons" style="display: none; outline: 0px; z-index: 1000; height: auto; width: 400px;" tabindex="-1"><div class="ui-dialog-focus-bumper ui-dialog-focus-bumper-top" tabindex="0"></div><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-1" class="ui-dialog-title" role="heading" aria-level="2">SpeedGrader Options</span><button class="ui-dialog-titlebar-close ui-corner-all"><span class="ui-icon ui-icon-closethick">close</span></button></div><form id="settings_form" style="width: auto; min-height: 0px; height: auto;" class="ui-dialog-content ui-widget-content" tabindex="0">
+    <p>
+      <label for="eg_sort_by">Sort student list</label>
+      <select name="eg_sort_by" id="eg_sort_by"><option value="alphabetically" selected="selected">by student name (alphabetically)</option>
+<option value="submitted_at">the date they submitted the assignment</option>
+<option value="submission_status">by submission status (needs grading, not submitted, etc)</option></select>
+    </p>
+
+      <p>
+        <input type="checkbox" id="hide_student_names" name="hide_student_names">
+        <label for="hide_student_names">
+          Hide student names in the SpeedGrader
+        </label>
+      </p>
+
+    <p class="hidden">
+      <input type="checkbox" name="enable_speedgrader_grade_by_question" id="enable_speedgrader_grade_by_question" value="1">
+      <label for="enable_speedgrader_grade_by_question">Grade by question</label>
+    </p>
+
+    <div class="button-container" style="display: none;">
+      <button class="btn dialog_closer">Cancel</button>
+      <button type="submit" class="btn btn-primary submit_button" style="display: none;">Save Settings</button>
+    </div>
+  </form><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="btn dialog_closer button_type_submit ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Cancel</span></button><button type="button" class="btn btn-primary submit_button button_type_submit ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Save Settings</span></button></div></div><div class="ui-dialog-focus-bumper ui-dialog-focus-bumper-bottom" tabindex="0"></div></div><div class="ui-selectmenu-menu" style="z-index: 101; top: 34px; left: 1002px;"><ul id="section-menu" class="ui-selectmenu-menu ui-widget ui-widget-content ui-selectmenu-menu-dropdown ui-selectmenu-open" style="display:none;" role="listbox" aria-activedescendant="section-menu-link">
+    <li role="presentation" class="ui-selectmenu-item">
+      <a href="#" tabindex="-1" role="option" aria-selected="true" id="section-menu-link">
+        <span>Showing: <span id="section_currently_showing">All Sections</span></span>
+      </a>
+      <ul style="display: none;" id="ui-id-2" class="ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" tabindex="0">
+        <li class="ui-menu-item" role="presentation"><a class="selected ui-corner-all" data-section-id="all" href="#" id="ui-id-3" tabindex="-1" role="menuitem">Show All Sections</a></li>
+      <li class="ui-menu-item" role="presentation"><a class="section_210788 ui-corner-all" data-section-id="210788" href="#" id="ui-id-4" tabindex="-1" role="menuitem">Section 10</a></li><li class="ui-menu-item" role="presentation"><a class="section_210780 ui-corner-all" data-section-id="210780" href="#" id="ui-id-5" tabindex="-1" role="menuitem">Section 9</a></li></ul>
+    </li>
+  </ul><ul class="ui-widget ui-widget-content ui-selectmenu-menu-dropdown ui-corner-bottom" aria-hidden="true" role="listbox" aria-labelledby="students_selectmenu-button" id="students_selectmenu-menu" style="width: 230px; height: auto;" aria-disabled="false" aria-activedescendant="ui-selectmenu-item-734"><li role="presentation" class="graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon"><i class="icon-check"></i></span>
+        <span class="ui-selectmenu-item-header">
+          sophie Baldwin
+        </span>
+    </a></li><li role="presentation" class="ui-selectmenu-hasIcon graded"><a href="#nogo" tabindex="-1" role="option" aria-selected="false" id="">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon"><i class="icon-check"></i></span>
+        <span class="ui-selectmenu-item-header">
+          Val Bautista
+        </span>
+    </a></li><li role="presentation" class="ui-selectmenu-hasIcon graded"><a href="#nogo" tabindex="-1" role="option" aria-selected="false" id="">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon"><i class="icon-check"></i></span>
+        <span class="ui-selectmenu-item-header">
+          Jonathan Binene
+        </span>
+    </a></li><li role="presentation" class="ui-selectmenu-hasIcon graded"><a href="#nogo" tabindex="-1" role="option" aria-selected="false" id="">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon"><i class="icon-check"></i></span>
+        <span class="ui-selectmenu-item-header">
+          William Butler
+        </span>
+    </a></li><li role="presentation" class="ui-selectmenu-hasIcon graded"><a href="#nogo" tabindex="-1" role="option" aria-selected="false" id="">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon"><i class="icon-check"></i></span>
+        <span class="ui-selectmenu-item-header">
+          Lucille Cadenhead
+        </span>
+    </a></li><li role="presentation" class="ui-selectmenu-hasIcon graded"><a href="#nogo" tabindex="-1" role="option" aria-selected="false" id="">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon"><i class="icon-check"></i></span>
+        <span class="ui-selectmenu-item-header">
+          Sophia Cadenhead
+        </span>
+    </a></li><li role="presentation" class="ui-selectmenu-hasIcon graded"><a href="#nogo" tabindex="-1" role="option" aria-selected="false" id="">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon"><i class="icon-check"></i></span>
+        <span class="ui-selectmenu-item-header">
+          Mosiah Carrasco Del Valle
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon ui-selectmenu-item-selected"><a href="#nogo" tabindex="-1" role="option" aria-selected="true" id="ui-selectmenu-item-734">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Hannah Cobbley
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Braden Dalton
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Aaron Day
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Dustin Dickerson
+        </span>
+    </a></li><li role="presentation" class="resubmitted ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Tucker Erickson
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          David Evans
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Austin Flameling
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          James Fluckiger
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Christopher Fulcher Blanco
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Taisei Goto
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Isaac Grover
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Talmage Hales
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Luke Hamblin
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Baker Heggie
+        </span>
+    </a></li><li role="presentation" class="resubmitted ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Ruth Jensen
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Andrew Kampelya
+        </span>
+    </a></li><li role="presentation" class="resubmitted ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Getu Keno
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          William Lee
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Isaac Legler
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Jared Lipman
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Abarim Morrow
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Sayal Neupane
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Maaya Ono
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Catherine Purushottam
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Brad Rennick
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Brody Richardson
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Ailsa Russell
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Taylor Saxton
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Darren Sheffer
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Adelyn Smith
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Josh Sparks
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Mariam Tencio
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Edson Whipple
+        </span>
+    </a></li><li role="presentation" class="resubmitted ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Jarom Williams
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Benjamin Wolfley
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Sunny Yeung
+        </span>
+    </a></li><li role="presentation" class="not_graded ui-selectmenu-hasIcon"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon">●</span>
+        <span class="ui-selectmenu-item-header">
+          Jacob Zurek
+        </span>
+    </a></li><li role="presentation" class="graded ui-selectmenu-hasIcon ui-corner-bottom"><a href="#nogo" tabindex="-1" role="option" aria-selected="false">
+        
+        <span class="ui-selectmenu-item-icon speedgrader-selectmenu-icon"><i class="icon-check"></i></span>
+        <span class="ui-selectmenu-item-header">
+          Test Student
+        </span>
+    </a></li></ul></div><span dir="ltr"></span><span dir="ltr"><span data-position-content="umOe6jZVzyLm" class="fOyUs_bGBk fOyUs_cuDs fOyUs_fQrx dqmEK_ftAV dqmEK_bFHc" style="border-width: 0px; top: 0px; left: -9999em; position: absolute; overflow: hidden; pointer-events: none; display: none;"><span class="fOyUs_bGBk fOyUs_dnJm fOyUs_dzKA fOyUs_EMjX fOyUs_elGp fOyUs_UeJS dqmEK_caGd" style="border-radius: 0.25rem; border-width: 0.0625rem; width: auto; height: auto;"><span class="dqmEK_fAVq dqmEK_ejeM undefined"></span><span id="uZj2yUYYkfgU" class="eZLSb_bGBk" role="tooltip">Comment Library (Suggestions Disabled)</span></span></span></span><div id="ui-tooltip-10" role="tooltip" class="ui-tooltip ui-widget ui-corner-all ui-widget-content center bottom vertical" style="top: 742px; left: 387px; display: block; opacity: 0;"><div class="ui-tooltip-content">Student feedback required in comments above to reassign.</div></div></body></html>
